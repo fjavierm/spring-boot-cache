@@ -11,10 +11,7 @@ import java.security.NoSuchAlgorithmException;
 @Service
 public class HashServiceImpl implements HashService {
 
-    @Cacheable(
-        value = "md5-cache",
-        key = "#text"
-    )
+    @Cacheable(value = "md5-cache")
     @Override
     public String generateMd5(final String text) {
         try {
