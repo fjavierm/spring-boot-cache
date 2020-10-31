@@ -23,7 +23,7 @@ public class HashServiceImpl implements HashService {
 
     // It is used for the "ManualCache"
     final LoadingCache<String, String> md5Cache = Caffeine.newBuilder()
-        .maximumSize(10)
+        .maximumSize(50)
         .expireAfterWrite(10, TimeUnit.SECONDS)
         .removalListener(CacheEventLogger.removalListener())
         .build(this::generateMd5Wrapper);

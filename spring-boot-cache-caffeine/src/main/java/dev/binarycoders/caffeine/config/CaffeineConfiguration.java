@@ -18,7 +18,7 @@ public class CaffeineConfiguration { // CaffeineConfig bean already exists
     @SuppressWarnings("all")
     public Caffeine caffeineConfig() {
         return Caffeine.newBuilder()
-            .maximumSize(10)
+            .maximumSize(50)
             .expireAfterWrite(10, TimeUnit.SECONDS)
             .removalListener(CacheEventLogger.removalListener());
     }
