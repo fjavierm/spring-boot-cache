@@ -17,6 +17,8 @@ public class HashServiceImpl implements HashService {
         try {
             final MessageDigest md = MessageDigest.getInstance("MD5");
 
+            md.update(text.getBytes());
+
             return DatatypeConverter.printHexBinary(md.digest()).toUpperCase();
         } catch (NoSuchAlgorithmException e) {
             throw new RuntimeException("Unable to get MD5 instance");
