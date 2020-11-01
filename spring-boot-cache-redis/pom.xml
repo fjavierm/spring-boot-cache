@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>spring-boot-cache-caffeine</artifactId>
+  <artifactId>spring-boot-cache-redis</artifactId>
 
   <dependencies>
     <dependency>
@@ -25,12 +25,7 @@
 
     <dependency>
       <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-cache</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>com.github.ben-manes.caffeine</groupId>
-      <artifactId>caffeine</artifactId>
+      <artifactId>spring-boot-starter-data-redis</artifactId>
     </dependency>
 
     <dependency>

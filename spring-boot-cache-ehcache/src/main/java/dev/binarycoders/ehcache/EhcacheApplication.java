@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EhCacheApplication {
+public class EhcacheApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EhCacheApplication.class, args);
+        SpringApplication.run(EhcacheApplication.class, args);
     }
 }
