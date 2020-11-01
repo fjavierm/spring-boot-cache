@@ -26,7 +26,7 @@
   <description>some example of cache using Spring Boot</description>
 
   <properties>
-    <java.version>15</java.version>
+    <java.version>14</java.version>
 
     <!-- External dependencies -->
     <ehcache.version>3.8.1</ehcache.version>
